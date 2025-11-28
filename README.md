@@ -39,17 +39,11 @@
 Assets/
 
 ├── Scripts/
-
 │ ├── CameraOrbitAroundPlayer.cs
-
 │ ├── PlayerMovement.cs
-
 │ └── SpriteBillboard.cs
-
 ├── Sprites/
-
 ├── Models/
-
 └── Scenes/
 
 
