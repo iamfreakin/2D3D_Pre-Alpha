@@ -35,9 +35,8 @@
 ---
 
 ## 🗂️ Project Structure
-
+```
 Assets/
-
  ├── Scripts/
  │ ├── CameraOrbitAroundPlayer.cs
  │ ├── PlayerMovement.cs
@@ -45,7 +44,7 @@ Assets/
  ├── Sprites/
  ├── Models/
  └── Scenes/
-
+```
 
 
 ---
