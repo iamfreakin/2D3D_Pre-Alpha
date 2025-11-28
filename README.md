@@ -38,13 +38,13 @@
 
 Assets/
 
-├── Scripts/
-│ ├── CameraOrbitAroundPlayer.cs
-│ ├── PlayerMovement.cs
-│ └── SpriteBillboard.cs
-├── Sprites/
-├── Models/
-└── Scenes/
+ ├── Scripts/
+ │ ├── CameraOrbitAroundPlayer.cs
+ │ ├── PlayerMovement.cs
+ │ └── SpriteBillboard.cs
+ ├── Sprites/
+ ├── Models/
+ └── Scenes/
 
 
 
