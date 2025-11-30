@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
@@ -8,34 +9,23 @@ public class Menu : MonoBehaviour
     
     void Start()
     {
-        btn.onClick.AddListener(Activetrue);
-        Activefalse();
+        btn.onClick.AddListener(() =>
+        {
+            menu.SetActive(true);
+            Time.timeScale = 0;
+        });
+        menu.SetActive(false);
     }
 
     void Update()
     {
-        if(Input.GetKey(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyBinding.menu))
         {
-            if(menu.activeSelf)
-            {
-                Activefalse();
-                Debug.Log("False");
-            }
-            else
-            {
-                Debug.Log("True");
-                Activetrue();
-            }
+            bool next = !menu.activeSelf;
+            menu.SetActive(next);
+
+            Time.timeScale = next ? 0 : 1;
         }
-    }
-    public void Activetrue()
-    {
-        menu.SetActive(true);
-    }
 
-    public void Activefalse()
-    {
-        menu.SetActive(false);
     }
-
 }
